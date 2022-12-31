@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient( #870000, #190a05);
+
+}
+
+.box {
+    position: relative;
+    width: 240px;
+    height: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1;
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(25px);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(#ffc107, #e91e63);
+}
+
+.pw-header {
+    position: absolute;
+    top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 234, 255);
+    height: 35px;
+    width: 90%;
+    font-size: 1.3rem;
+    border-radius: 3.5px;
+    overflow: hidden;
+}
+.pw button {
+    background-color: rgb(29, 11, 48);
+    position: absolute;
+    color: white;
+    font-family: inherit;
+    font-size: 0.8rem;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    transform: translate(0%, 0%);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.pw:hover button {
+    opacity: 1;
+    transform: translate(0%, 20%);
+}
+
+.form-control {
+    position: absolute;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form-control .form{
+    display: flex;
+    margin: 0.5rem 0;
+    justify-content: space-between;
+
+}
+
+.generate {
+    position: absolute;
+    height: 23px;
+    width: 135px;
+    top: 80%;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid;
+    font-weight: 600;
+}
+
+.generate:hover{
+    transition: 0.3s linear;
+    background-color: rgba(255, 255, 255, 0.438);
+}
