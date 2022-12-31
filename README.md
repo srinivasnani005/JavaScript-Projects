@@ -1,2 +1,2 @@
 # JavaScript-Projects
-all the projects appeared in this foldere
+all the projects appeared in this folder
